@@ -18,9 +18,9 @@ class ArrTest extends \PHPUnit\Framework\TestCase
     public function testAssign()
     {
         $data = ['key_1' => 'value_1', 'key_2' => null];
-        Arr::assign($data, 'key_1', 'new_value_1');
-        Arr::assign($data, 'key_2', 'new_value_2');
-        Arr::assign($data, 'key_3', 'new_value_3');
+        Arr::assign($data, 'key_1', 'new_value_1', false);
+        Arr::assign($data, 'key_2', 'new_value_2', false);
+        Arr::assign($data, 'key_3', 'new_value_3', false);
         $this->assertSame(['key_1' => 'value_1', 'key_2' => null, 'key_3' => 'new_value_3'], $data);
     }
 

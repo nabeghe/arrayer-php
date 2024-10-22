@@ -5,14 +5,16 @@ use Nabeghe\Stringer\Str;
 trait NabegheArrTrait
 {
     /**
-     * Assigns a value to an array if the key doesn't exist.
+     * Assigns a value to a key in an array.
+     *
      * @param  array  $data
      * @param  mixed  $key
      * @param  mixed  $value
+     * @param  bool  $force Optional. If false, the new value will not be set if the key already exists. Drfault true.
      */
-    public static function assign(&$data, $key, $value)
+    public static function assign(&$data, $key, $value, $force = true)
     {
-        if (!array_key_exists($key, $data)) {
+        if ($force || !array_key_exists($key, $data)) {
             $data[$key] = $value;
         }
     }
