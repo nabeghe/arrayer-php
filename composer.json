@@ -2,22 +2,30 @@
   "name": "nabeghe/arrayer",
   "description": "An array helper for PHP. It includes some useful methods and possibly other features.",
   "keywords": [
-    "array", "array helper", "array utils", "array merge", "library", "helper", "support"
+    "array",
+    "array helper",
+    "array utils",
+    "array merge",
+    "library",
+    "helper",
+    "support"
   ],
   "type": "library",
   "homepage": "https://github.com/nabeghe/arrayer-php",
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Hadi Akbarzadeh",
+      "email": "elsiomcoder@gmail.com",
+      "homepage": "https://elatel.ir",
+      "role": "Developer"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "Nabeghe\\Arrayer\\": "src/"
     }
   },
-  "authors": [
-    {
-      "name": "Hadi Akbarzadeh",
-      "email": "hadicoder@gmail.com"
-    }
-  ],
   "require": {
     "php": ">=7.4",
     "ext-json": "*",
